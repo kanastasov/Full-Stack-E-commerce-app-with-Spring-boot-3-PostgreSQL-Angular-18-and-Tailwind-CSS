@@ -3,11 +3,12 @@ import { RouterModule } from '@angular/router';
 import { FaConfig, FaIconLibrary } from '@fortawesome/angular-fontawesome';
 import { fontAwesomeIcons } from './shared/font-awesome-icons';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { NavbarComponent } from "./layout/navbar.component";
 
 @Component({
-  selector: 'app-root',
+  selector: 'ecom-root',
   standalone: true,
-  imports: [RouterModule, FontAwesomeModule], // ✅ Add FontAwesomeModule here
+  imports: [RouterModule, FontAwesomeModule, NavbarComponent], // ✅ Add FontAwesomeModule here
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'], // fixed typo: 'styleUrl' ➡️ 'styleUrls'
 })
