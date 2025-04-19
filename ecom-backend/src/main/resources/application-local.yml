@@ -1,0 +1,12 @@
+logging:
+  level:
+    ROOT: INFO
+    org.hibernate.SQL: INFO
+    fr.codecake.ecom: INFO
+
+spring:
+  application:
+    name: Ecommerce Backend
+  threads:
+    virtual:
+      enabled: true
